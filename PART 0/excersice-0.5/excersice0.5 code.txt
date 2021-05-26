@@ -1,0 +1,12 @@
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/spa
+Server-->Browser:HTML-code
+Browser->Server:https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser:main.css
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server-->Browser:spa.js
+note over Browser:
+ The default method would send the data to the server 
+ and cause a new GET request
+end note
+Browser->Server:https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser:{content: "new excersice", date: "2021-05-25T11:31:11.488Z"}
