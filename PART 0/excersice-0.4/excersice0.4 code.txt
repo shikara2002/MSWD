@@ -1,0 +1,21 @@
+note over Browser:
+text field mentioned in noted add any text and submit
+so that new note gets created
+end note
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Browser:HTML-code
+note over Server:
+url gets directed in which server asks browser for 
+GET request at headers location
+end note
+note over Browser:
+notes page gets reloded by browser
+end note
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser:main.css
+
+
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser:main.js
+Browser->Server:https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser:data.json 99: {content: "shikara", date: "2021-05-25T11:15:38.173Z"}
